@@ -1,0 +1,51 @@
+{
+  "name": "aws-lambda-node-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple boilerplate for Node base AWS Lambdas",
+  "main": "index.js",
+  "scripts": {
+    "test": "concurrently 'nyc --reporter=lcov --reporter=text ava test/unit/*.spec.js' 'standard'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmednuaman/aws-lambda-node-boilerplate.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "node",
+    "boilerplate"
+  ],
+  "author": "Ahmed Nuaman (ahmed@ahmednuaman.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmednuaman/aws-lambda-node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ahmednuaman/aws-lambda-node-boilerplate#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "aws-sdk": "^2.6.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-lodash": "^3.2.8",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "chai": "^3.5.0",
+    "concurrently": "^2.2.0",
+    "nyc": "^8.1.0",
+    "sinon": "^1.17.5",
+    "standard": "^8.0.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "lodash": "^4.15.0"
+  },
+  "ava": {
+    "require": "babel-register"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
