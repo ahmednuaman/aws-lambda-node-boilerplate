@@ -4,7 +4,8 @@
   "description": "A simple boilerplate for Node base AWS Lambdas",
   "main": "index.js",
   "scripts": {
-    "test": "concurrently 'nyc --reporter=lcov --reporter=text ava test/unit/*.spec.js' 'standard'"
+    "build": "concurrently 'npm run test' 'webpack -p --colors'",
+    "test": "concurrently 'nyc --reporter=lcov --reporter=text ava --verbose test/unit/*.spec.js' 'standard'"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,14 @@
   "babel": {
     "presets": [
       "es2015"
+    ],
+    "plugins": [
+      "lodash"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "build"
     ]
   }
 }
