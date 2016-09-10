@@ -1,5 +1,7 @@
-# aws-lambda-node-boilerplate
-A simple boilerplate for Node base AWS Lambdas
+# AWS lambda node boilerplate
+A simple boilerplate for node base AWS lambdas that packages up your code without including `aws-sdk`.
+
+![](https://a.dilcdn.com/bl/wp-content/uploads/sites/8/2014/10/GeniePacking.gif)
 
 ## What does it do?
 It sets up a nice and easy way to write some nice ES6 code for your lambda and package it up in a nice and efficient way.
